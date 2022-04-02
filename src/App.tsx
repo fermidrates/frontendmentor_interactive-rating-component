@@ -27,9 +27,14 @@ function App() {
             : <div key={rating} className="rating__values" onClick={() => setRatingSelected(rating)}>{rating}</div>
           ))}
         </div>
-        <button className="rating__button" onClick={() => setIsSubmitted(true)}>
+        {ratingSelected === 0
+        ? <button className="rating__button" disabled onClick={() => setIsSubmitted(true)}>
           SUBMIT
         </button>
+        : <button className="rating__button" onClick={() => setIsSubmitted(true)}>
+          SUBMIT
+        </button>
+        }
       </div>
 
       <div className="attribution">

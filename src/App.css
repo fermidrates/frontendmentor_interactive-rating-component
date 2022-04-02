@@ -35,8 +35,8 @@ p {
 }
 
 .rating__modal {
-  background-image: radial-gradient(circle at top, var(--dark-blue) 0, hsl(212, 19%, 10%) 100%);
-  width: 22em;
+  background-image: radial-gradient(circle at top, var(--dark-blue) 0, var(--very-dark-blue) 100%);
+  width: 24em;
   height: 25em;
   border-radius: 25px;
   color: var(--white);
@@ -93,13 +93,18 @@ p {
   letter-spacing: 3px;
 }
 
+.rating__button:disabled {
+  background-color: var(--medium-grey);
+  color:var(--light-grey);
+}
+
 .rating__button:hover {
   background-color: var(--white);
   color: var(--orange);
 }
 
 .rating__confirmation {
-  background-image: radial-gradient(circle at top, var(--dark-blue) 0, hsl(212, 19%, 10%) 100%);
+  background-image: radial-gradient(circle at top, var(--dark-blue) 0, var(--very-dark-blue) 100%);
   width: 22em;
   height: 25em;
   border-radius: 25px;
